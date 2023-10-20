@@ -1,0 +1,74 @@
+@import "../../root";
+@import "../../variables";
+@import "../../navbar";
+@import "../../primary-navbar";
+@import "../../footer";
+
+.terms-page {
+  padding: 0 20%;
+  margin-top: 120px;
+  .heading {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+  }
+  .description {
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .content {
+    padding: 10px;
+    .topic-section {
+      .topic-heading {
+        font-size: 25px;
+      }
+      .list {
+        li {
+          padding: 10px;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+  .terms-page {
+    padding: 0px 15px;
+    .heading {
+      font-size: 40px;
+    }
+    .description {
+      font-size: 18px;
+    }
+    .content {
+      padding: 10px;
+      .topic-section {
+        .topic-heading {
+          font-size: 25px;
+        }
+        .list {
+          li {
+            padding: 10px;
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 300px) {
+}

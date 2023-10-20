@@ -1,0 +1,205 @@
+@import "variables";
+
+.posts {
+  padding: $container;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  column-count: 5;
+  column-gap: 30px;
+  width: 100%;
+  .post-card {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    break-inside: avoid;
+    .post-header {
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+      .post-image {
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+          border-radius: 5px;
+        }
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        cursor: zoom-in;
+        display: flex;
+        align-items: flex-end;
+        padding: 5px;
+        .download-btn {
+          color: #fff;
+          background-color: #222;
+          font-size: 14px;
+          padding: 8px;
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+            rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+          text-decoration: none;
+          display: none;
+          margin-left: auto;
+        }
+      }
+      &:hover {
+        .overlay {
+          background-image: linear-gradient(
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            rgba(0, 0, 0, 0.2)
+          );
+          .download-btn {
+            display: block;
+          }
+        }
+      }
+    }
+    .post-body {
+      margin-top: 10px;
+      .post-details {
+        margin: 10px 0;
+        font-weight: normal;
+        font-size: 12px;
+        .component-category {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .component-price {
+          float: right;
+          color: $primary;
+          text-decoration: none;
+          font-size: 12px;
+        }
+      }
+      .post-title {
+        margin: 0;
+        line-height: 15px;
+        font-weight: normal;
+        line-height: 18px;
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .post-footer {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      .author-image {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+          border-radius: 50px;
+        }
+      }
+      .author-details {
+        padding: 0 10px;
+        .post-context {
+          margin: 0;
+          a {
+            text-decoration: none;
+            font-size: 12px;
+          }
+        }
+        .author-name {
+          margin: 0;
+          a {
+            text-decoration: none;
+            font-size: 12px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .post-menu {
+        margin-left: auto;
+        .post-menu-btn {
+          text-decoration: none;
+          padding: 5px;
+          border-radius: 5px;
+          font-size: 15px;
+          border: none;
+          outline: none;
+          border-radius: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.load-posts {
+  position: sticky;
+  bottom: 0px;
+  padding: 10px;
+  text-align: center;
+  z-index: 999;
+  .load-btn {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    cursor: pointer;
+    z-index: 999;
+    color: white;
+    background-color: $primary;
+    font-size: 22px;
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+  .posts {
+    padding: 30px 15px;
+    column-count: 1;
+    column-gap: 20px;
+  }
+  .load-posts {
+    bottom: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 300px) {
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="assets/icons/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/pages/about/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/stylesheet-light.css" id="theme">
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="theme()">
+
+    <header class="navbar bg-primary">
+        <nav class="left-menu">
+            <a href="index.html" class="logo">
+                <img src="assets/imgs/logo.png" alt="" width="50" height="50" class="image">
+            </a>
+            <ul class="main-menu">
+                <li><a href="explore.html" class="nav-link text-primary text-decoration-none ">Explore</a></li>
+                <li><a href="community.html" class="nav-link text-primary text-decoration-none ">Community</a></li>
+                <li><a href="https://www.brainbreads.com" class="nav-link text-primary text-decoration-none">Tutorials
+                        <small class="bx bx-link-external text-primary"></small></a></li>
+            </ul>
+        </nav>
+        <form action="" class="nav-search">
+            <input type="search" class="search-field bg-light text-placeholder text-primary" name="q" id="search"
+                placeholder="Search...">
+            <button class="bx bx-search search-btn bg-light text-primary"></button>
+        </form>
+        <nav class="nav-menu">
+            <ul class="logout-menu">
+                <li><a href="login.html" class="btn btn-login bg-light bg-light-hover text-primary">Login</a></li>
+                <li><a href="signup.html" class="btn btn-signup">Signup</a></li>
+            </ul>
+            <!-- <ul class="login-menu">
+                <li><a href="" class="btn btn-notifications bx bx-bell"></a></li>
+                <li><a href="" class="btn btn-cart bx bx-shopping-bag"></a></li>
+                <li><a href="" class="profile-btn"><img src="assets/imgs//team/1.jpg" class="image" alt=""></a></li>
+              </ul> -->
+            <div class="meta-menu">
+
+                <div class="dropdown">
+                    <button class="btn text-primary bg-transparent bg-light-hover border bx bx-plus"
+                        data-toggle="dropdown"></button>
+                    <div class="dropdown-menu create-content bg-primary border">
+                        <a href="create-ad.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-stats ad"></span>Ad
+                        </a>
+                        <a href="create-question.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-help-circle question"></span>Question
+                        </a>
+                        <a href="create-component.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bxs-component component"></span>Component
+                        </a>
+                        <a href="https://www.brainbreads.com/create-tutorial.com"
+                            class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-book-content tutorial"></span>Tutorial
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn text-primary bg-transparent bg-light-hover border bx bx-menu"
+                        data-toggle="dropdown"></button>
+                    <div class="dropdown-menu menu-content bg-primary border">
+                        <a href="settings.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-cog bg-light text-secondary"></span>Settings
+                        </a>
+                        <a href="payments.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-wallet bg-light text-secondary"></span>Payments
+                        </a>
+                        <a href="bookmarks.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-bookmark bg-light text-secondary"></span>Bookmarks
+                        </a>
+                        <div class="border-bottom"></div>
+                        <a href="help-center.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-question-mark bg-light text-secondary"></span>Help center
+                        </a>
+                        <a href="about-us.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-info-circle bg-light text-secondary"></span> About us
+                        </a>
+                        <a href="contact-us.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-envelope bg-light text-secondary"></span>Contact us
+                        </a>
+                        <a href="terms-and-conditions.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-detail bg-light text-secondary"></span> Terms and conditions
+                        </a>
+                        <a href="privacy-policy.html" class="dropdown-item text-secondary bg-light-hover">
+                            <span class="icon bx bx-user-pin bg-light text-secondary"></span>Privacy policy
+                        </a>
+                        <div class="border-bottom"></div>
+                        <div class="switch-theme">
+                            <b class="title text-secondary">Dark mode</b>
+                            <label class="switch">
+                                <input type="checkbox" onchange="stylesheet()" value="1" id="stylesheetchange">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="primary-navbar bg-primary">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="about-us.html" class="menu-link text-secondary text-decoration-none active-link">About</a>
+            </li>
+            <li class="menu-item">
+                <a href="contact-us.html" class="menu-link text-secondary text-decoration-none">Contact</a>
+            </li>
+            <li class="menu-item">
+                <a href="community-guidelines.html" class="menu-link text-secondary text-decoration-none">Community
+                    guidelines</a>
+            </li>
+            <li class="menu-item">
+                <a href="help-center.html" class="menu-link text-secondary text-decoration-none">Help center</a>
+            </li>
+            <li class="menu-item">
+                <a href="terms-and-conditions.html" class="menu-link text-secondary text-decoration-none">Terms</a>
+            </li>
+            <li class="menu-item">
+                <a href="privacy-policy.html" class="menu-link text-secondary text-decoration-none">Privacy</a>
+            </li>
+            <li class="menu-item">
+                <a href="advertising.html" class="menu-link text-secondary text-decoration-none">Advertising</a>
+            </li>
+            <li class="menu-item">
+                <a href="copyright.html" class="menu-link text-secondary text-decoration-none">Copyright</a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <main class="about-page">
+        <h1 class="heading text-light">About us</h1>
+        <p class="description text-secondary">Designspiration is committed to being the best product that it can. If you
+            have
+            questions, comments, or suggestions on how to improve the Designspiration experience, we would love to hear
+            it! <a class="text-decoration-none text-light " href="contact-us.html">Contact Us.</a></p>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <section class="row">
+                <div class="col">
+                    <h4 class="heading text-primary">About</h4>
+                    <div class="description text-secondary">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis necessitatibus
+                            quia! Officiis fugit similique vel deserunt earum. In est sunt, natus minima dicta
+                            accusantium porro quis cupiditate magnam optio!
+                        </p>
+                    </div>
+                    <ul class="social-links">
+                        <li><a href="" class="facebook"><span class="icon bx bxl-facebook"></span></a></li>
+                        <li><a href="" class="instagram"><span class="icon bx bxl-instagram"></span></a></li>
+                        <li><a href="" class="youtube"><span class="icon bx bxl-pinterest"></span></a></li>
+                        <li><a href="" class="twitter"><span class="icon bx bxl-twitter"></span></a></li>
+                        <li><a href="" class="youtube"><span class="icon bx bxl-youtube"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="heading text-primary">Explore</h4>
+                    <ul class="list">
+                        <li>
+                            <a href="" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Categories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solutions.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="people.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> People
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://brainbreads.com" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Tutorials
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="heading text-primary">Company</h4>
+                    <ul class="list">
+                        <li>
+                            <a href="news.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="advertising.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Advertising
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="heading text-primary">Support</h4>
+                    <ul class="list">
+                        <li>
+                            <a href="help-center.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Help center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terms-and-conditions.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Terms and
+                                conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Privacy policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="community-rules.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Community rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="how-we-work.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> How we work
+                            </a>
+                        </li>
+                        <li>
+                            <a href="copyright.html" class="text-primary">
+                                <span class="bx bx-left-arrow"></span> Copyright
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </section>
+        <section class="strip text-primary">
+            &copy; <span id="year"></span> brainbarters.com. all right reserved
+        </section>
+    </footer>
+
+
+    <nav class="mobile-footer bg-primary">
+        <ul class="menu">
+            <li><a href="community.html" class="btn text-secondary bx bx-group"></a></li>
+            <li><a href="explore.html" class="btn text-secondary bx bx-compass"></a></li>
+            <li><a href="cart.html" class="btn text-secondary bx bx-shopping-bag"></a></li>
+            <li><a href="notifications.html" class="btn text-secondary bx bx-bell"></a></li>
+            <li>
+                <a href="profile.html" class="user-image">
+                    <img src="assets/imgs/team/1.jpg" width="40" height="40" alt="" class="image border">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/required.js"></script>
+</body>
+
+</html>

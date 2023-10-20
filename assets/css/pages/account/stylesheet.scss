@@ -1,0 +1,142 @@
+@import "../../root";
+@import "../../variables";
+@import "../../navbar";
+
+.account-page {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  .account-form {
+    width: 25%;
+    .form-group {
+      margin-bottom: 20px;
+      .form-field {
+        padding: 15px 20px;
+        outline: none;
+        border: none;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+        &::placeholder {
+          font-weight: bolder;
+        }
+      }
+    }
+    .or-space {
+      text-align: center;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .heading {
+      text-align: center;
+      margin: 10px 0;
+      font-weight: bolder;
+      font-size: 18px;
+    }
+    .sub-heading {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 30px;
+      font-size: 25px;
+      font-weight: normal;
+    }
+    .btn {
+      width: 100%;
+      outline: none;
+      border: none;
+      display: block;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
+      margin-bottom: 15px;
+      position: relative;
+      .icon {
+        position: absolute;
+        padding: 6px;
+        border-radius: 50px;
+        background-color: white;
+        color: #000;
+        left: 10px;
+        top: 6px;
+        font-size: 20px;
+      }
+    }
+    .btn-facebook {
+      background-color: #3b5998;
+      color: white;
+      &:hover {
+        background-color: #547acc;
+      }
+    }
+    .btn-google {
+      background-color: #4285f4;
+      color: white;
+      &:hover {
+        background-color: #5998fd;
+      }
+    }
+    .btn-primary {
+      background-color: $primary;
+      color: white;
+      &:hover {
+        background-color: $primary-hover;
+      }
+    }
+    .help-text {
+      font-size: 12px;
+    }
+    .forgot-password {
+      text-align: center;
+      a {
+        font-size: 12px;
+        text-decoration: none;
+      }
+    }
+    .create-account,
+    .have-account {
+      text-align: center;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: $primary;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: #000;
+        }
+      }
+    }
+  }
+}
+
+@import "../../footer";
+
+@media screen and (max-width: 1030px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+  .account-page {
+    padding: 10px;
+    margin-bottom: 10px;
+    .account-form {
+      width: 95%;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 300px) {
+}

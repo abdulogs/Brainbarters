@@ -1,0 +1,84 @@
+@import "../../root";
+@import "../../variables";
+@import "../../navbar";
+@import "../../primary-navbar";
+
+.feeds-banner {
+  padding: $container;
+  padding-top: 80px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  .left-col {
+    width: 100%;
+    .heading {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    .sub-heading {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    .explore-btn {
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+      background-color: $primary;
+      text-decoration: none;
+      .text {
+        vertical-align: middle;
+        font-size: 14px;
+      }
+      .icon {
+        vertical-align: middle;
+        font-size: 20px;
+      }
+      &:hover {
+        background-color: $primary-hover;
+      }
+    }
+  }
+  .right-col {
+    width: 50%;
+    text-align: center;
+    .image {
+      width: 100%;
+    }
+  }
+}
+
+@import "../../posts";
+
+@media screen and (max-width: 1030px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+  .feeds-banner {
+    padding: 15px;
+    padding-top: 100px;
+    .left-col {
+      width: 100%;
+      .heading {
+        font-size: 40px;
+      }
+      .sub-heading {
+        font-size: 15px;
+      }
+    }
+    .right-col {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 300px) {
+}

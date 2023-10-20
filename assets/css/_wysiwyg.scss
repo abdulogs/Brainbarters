@@ -1,0 +1,44 @@
+// div[aria-label="Insert Image"] {
+//   display: block !important;
+// }
+.note-modal {
+  .note-modal-content {
+    width: 400px !important;
+    margin: 10% auto !important;
+    .note-modal-header {
+        background-color: #f5f5f5;
+        .note-modal-title{
+            font-size: 15px;
+        }
+    }
+    .note-modal-body {
+      .form-group {
+        .note-form-label {
+          color: #666;
+          font-size: 14px;
+        }
+        .note-form-control {
+          border-radius: 5px;
+          background-color: #f5f5f5;
+          padding: 10px;
+        }
+      }
+    }
+    .note-modal-footer {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+      padding: 10px;
+      .note-image-btn , .note-link-btn {
+        width: auto;
+        padding: 5px 10px;
+        font-weight: normal;
+        &:hover{
+            background-color: #000;
+        }
+      }
+    }
+  }
+}

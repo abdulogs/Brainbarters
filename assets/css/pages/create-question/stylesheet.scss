@@ -1,0 +1,104 @@
+@import "../../root";
+@import "../../variables";
+@import "../../navbar";
+
+.create-question-page {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 70px;
+  .create-form {
+    width: 25%;
+    .form-group {
+      margin-bottom: 15px;
+      .form-field {
+        padding: 15px;
+        outline: none;
+        border: none;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+        resize: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .form-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 98%;
+        background-position-y: 10px;
+      }
+      .btn-upload {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        .file {
+          display: none;
+        }
+      }
+    }
+    .heading {
+      text-align: center;
+      margin: 10px 0;
+      font-weight: bolder;
+      font-size: 18px;
+    }
+    .sub-heading {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 30px;
+      font-size: 25px;
+      font-weight: normal;
+    }
+    .btn-primary {
+      width: 100%;
+      outline: none;
+      border: none;
+      display: block;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      text-align: center;
+      background-color: $primary;
+      color: white;
+      font-weight: bold;
+      &:hover {
+        background-color: $primary-hover;
+      }
+    }
+    .help-text {
+      font-size: 12px;
+    }
+  }
+}
+
+@import "../../wysiwyg";
+
+@media screen and (max-width: 1030px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+  .create-question-page {
+    margin-top: 80px;
+    .create-form {
+      width: 93%;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 300px) {
+}

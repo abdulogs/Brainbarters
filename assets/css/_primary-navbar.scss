@@ -1,0 +1,54 @@
+.primary-navbar {
+  padding: $container;
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  z-index: 99;
+  .menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    .menu-item {
+      padding: 10px 15px;
+      .menu-link {
+        font-size: 14px;
+        display: inline-block;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+  .primary-navbar {
+    padding: 10px;
+    .menu {
+      justify-content: flex-start;
+      overflow-y: auto;
+      .menu-item {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 300px) {
+}
